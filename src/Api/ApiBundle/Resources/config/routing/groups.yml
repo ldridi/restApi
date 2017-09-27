@@ -1,0 +1,19 @@
+groups:
+    path:     /
+    defaults: { _controller: ApiBundle:Groups:getGroups }
+    methods:  [GET]
+
+groups_show:
+    path:     /{id}
+    defaults: { _controller: ApiBundle:Groups:showGroup }
+    methods:  [GET]
+
+groups_update:
+    path:     /{id}
+    defaults: { _controller: ApiBundle:Groups:updateGroup }
+    methods:  [PUT]
+
+groups_create:
+    path:     /
+    defaults: { _controller: ApiBundle:Groups:createGroup }
+    methods:  [POST]

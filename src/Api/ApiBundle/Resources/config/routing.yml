@@ -1,0 +1,11 @@
+api_homepage:
+    path:     /
+    defaults: { _controller: ApiBundle:Default:index }
+
+users:
+    resource: "@ApiBundle/Resources/config/routing/users.yml"
+    prefix:   /users
+
+groups:
+    resource: "@ApiBundle/Resources/config/routing/groups.yml"
+    prefix:   /groups
